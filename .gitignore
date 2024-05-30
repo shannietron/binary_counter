@@ -1,0 +1,11 @@
+*-bak
+*-backups
+*-cache*
+*-bak*
+_autosave*
+\#auto_saved_files\#
+
+# KiCad lock files
+~*.lck
+
+
