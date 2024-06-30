@@ -1781,10 +1781,10 @@
 		)
 	)
 	(junction
-		(at 210.82 109.22)
+		(at 210.82 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "21cc1e78-4a44-4b50-a088-ad9b0b02963a")
+		(uuid "0de97144-d1ff-4944-b3a5-bb5e28ecbbdb")
 	)
 	(junction
 		(at 85.09 106.68)
@@ -2036,16 +2036,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 106.68) (xy 210.82 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a908190-e510-4a1f-b905-778d884766bd")
-	)
-	(wire
-		(pts
 			(xy 120.65 90.17) (xy 111.76 90.17)
 		)
 		(stroke
@@ -2146,6 +2136,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 124.46) (xy 207.01 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ae294df-1a45-4705-bfdd-5ddbdfce7b3e")
+	)
+	(wire
+		(pts
 			(xy 170.18 96.52) (xy 170.18 87.63)
 		)
 		(stroke
@@ -2163,16 +2163,6 @@
 			(type default)
 		)
 		(uuid "579e13f0-bd19-4af3-82e4-5237f66c7e51")
-	)
-	(wire
-		(pts
-			(xy 210.82 109.22) (xy 210.82 113.03)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5842b1f2-b5a2-41da-b667-1c86ef75f0a4")
 	)
 	(wire
 		(pts
@@ -2196,6 +2186,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 124.46) (xy 210.82 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6056778a-673e-4896-94a2-94bae4255edb")
+	)
+	(wire
+		(pts
 			(xy 116.84 125.73) (xy 104.14 125.73)
 		)
 		(stroke
@@ -2213,6 +2213,16 @@
 			(type default)
 		)
 		(uuid "6f8604a6-6af4-4b1c-9ceb-f3416bc14876")
+	)
+	(wire
+		(pts
+			(xy 210.82 107.95) (xy 210.82 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70af6f18-d227-4845-a7ce-be1ebbc20dde")
 	)
 	(wire
 		(pts
@@ -2253,6 +2263,16 @@
 			(type default)
 		)
 		(uuid "82a65a4c-279e-4c57-ae40-a28934e4bfc1")
+	)
+	(wire
+		(pts
+			(xy 210.82 121.92) (xy 210.82 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8307ce88-e852-4db6-8b6e-2091f1778fb9")
 	)
 	(wire
 		(pts
@@ -2416,6 +2436,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 124.46) (xy 207.01 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c381fce0-5747-4283-a173-407cd3b18f74")
+	)
+	(wire
+		(pts
 			(xy 85.09 116.84) (xy 85.09 125.73)
 		)
 		(stroke
@@ -2513,16 +2543,6 @@
 			(type default)
 		)
 		(uuid "d8d11c13-eb48-4067-bc76-21f9496f25f9")
-	)
-	(wire
-		(pts
-			(xy 210.82 123.19) (xy 210.82 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ddd5a2df-1d47-4277-8452-5eef76803be8")
 	)
 	(wire
 		(pts
@@ -2644,17 +2664,6 @@
 		)
 		(uuid "483d8549-26d2-4647-8f8f-ba3251183156")
 	)
-	(label "SWIO"
-		(at 210.82 121.92 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "60f5eb9e-5330-49ed-907d-261f143a9e78")
-	)
 	(label "LED5"
 		(at 92.71 106.68 0)
 		(fields_autoplaced yes)
@@ -2709,6 +2718,17 @@
 			(justify left bottom)
 		)
 		(uuid "cb573fb0-80e7-4217-af7d-dd86eb9b2133")
+	)
+	(label "SWIO"
+		(at 210.82 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cc72aed3-6db8-4492-9522-c96c28a68ec1")
 	)
 	(label "LED1"
 		(at 92.71 80.01 0)
@@ -3238,72 +3258,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 210.82 109.22 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "309ab236-4b24-4c28-9aca-03d36110639f")
-		(property "Reference" "TP2"
-			(at 207.264 107.188 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VDD"
-			(at 207.772 110.998 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
-			(at 210.82 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 210.82 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 210.82 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5b6a9e7e-dd8e-4372-a8aa-ab218684f024")
-		)
-		(instances
-			(project "Binary_Counter"
-				(path "/b0174f12-7701-4d22-b6ab-875e2f3c0573"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 143.51 105.41 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3777,72 +3731,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 210.82 123.19 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "577843d2-e496-41c5-8b3d-4e93868d11d0")
-		(property "Reference" "TP11"
-			(at 209.042 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SWIO"
-			(at 209.296 123.952 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 205.74 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 205.74 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 210.82 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "32de3574-c9ff-480f-8f99-addf1a32ce28")
-		)
-		(instances
-			(project "Binary_Counter"
-				(path "/b0174f12-7701-4d22-b6ab-875e2f3c0573"
-					(reference "TP11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 143.51 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3904,72 +3792,6 @@
 			(project "Binary_Counter"
 				(path "/b0174f12-7701-4d22-b6ab-875e2f3c0573"
 					(reference "TP7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 210.82 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c4dc799-6cd2-42e9-b2c0-7bdb651ff4d6")
-		(property "Reference" "#PWR07"
-			(at 210.82 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 210.82 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 210.82 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "109ebdd6-1b48-431f-8328-d9585ba623a8")
-		)
-		(instances
-			(project "Binary_Counter"
-				(path "/b0174f12-7701-4d22-b6ab-875e2f3c0573"
-					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4038,6 +3860,72 @@
 			(project "Binary_Counter"
 				(path "/b0174f12-7701-4d22-b6ab-875e2f3c0573"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 207.01 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f967e79-e757-4863-978e-2840c7ee7ebf")
+		(property "Reference" "#PWR07"
+			(at 207.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 207.01 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 207.01 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "adc6831d-4e49-4d2e-8112-25857649d455")
+		)
+		(instances
+			(project "Binary_Counter"
+				(path "/b0174f12-7701-4d22-b6ab-875e2f3c0573"
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4279,7 +4167,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_2.0x2.0mm"
 			(at 199.39 111.76 0)
 			(effects
 				(font
@@ -4783,6 +4671,72 @@
 			(project "Binary_Counter"
 				(path "/b0174f12-7701-4d22-b6ab-875e2f3c0573"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 210.82 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c312814f-3202-4f95-aa3b-7d7e8c63a508")
+		(property "Reference" "TP2"
+			(at 212.598 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SWIO"
+			(at 212.344 107.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 215.9 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 215.9 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 210.82 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37c1d4f0-a413-4c72-b873-1b8d0cc407fe")
+		)
+		(instances
+			(project "Binary_Counter"
+				(path "/b0174f12-7701-4d22-b6ab-875e2f3c0573"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -5586,6 +5540,72 @@
 			(project "Binary_Counter"
 				(path "/b0174f12-7701-4d22-b6ab-875e2f3c0573"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 210.82 121.92 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fac44a85-4ef9-40ae-960f-2ef7b9028f10")
+		(property "Reference" "TP1"
+			(at 214.376 123.952 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VDD"
+			(at 213.868 120.142 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+			(at 210.82 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 210.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e97e0974-d1b5-4cdb-b7bd-5b78b8e12e52")
+		)
+		(instances
+			(project "Binary_Counter"
+				(path "/b0174f12-7701-4d22-b6ab-875e2f3c0573"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
