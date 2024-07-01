@@ -3764,7 +3764,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4mm_Pad"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 231.14 26.67 0)
 			(effects
 				(font
@@ -3898,7 +3898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4mm_Pad"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 241.3 26.67 0)
 			(effects
 				(font
@@ -4369,7 +4369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4mm_Pad"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 226.06 26.67 0)
 			(effects
 				(font
@@ -5520,7 +5520,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4mm_Pad"
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
 			(at 236.22 26.67 0)
 			(effects
 				(font
