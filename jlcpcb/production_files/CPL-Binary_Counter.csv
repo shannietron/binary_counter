@@ -1,0 +1,25 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C1,100n,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,182.5,-93.0,90.0,top
+C2,100n,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,203.67,-90.03,-90.0,top
+C3,1uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,202.96,-97.13,90.0,top
+C4,1uF,C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,193.14,-97.36,90.0,top
+D1,LED,LED0805-R-RD,175.0,-93.0,90.0,top
+D2,LED,LED0805-R-RD,168.0,-93.0,90.0,top
+D3,LED,LED0805-R-RD,161.0,-93.0,90.0,top
+D4,LED,LED0805-R-RD,154.0,-93.0,90.0,top
+D5,LED,LED0805-R-RD,147.0,-93.0,90.0,top
+D6,LED,LED0805-R-RD,140.0,-93.0,90.0,top
+D7,LED,LED0805-R-RD,133.0,-93.0,90.0,top
+D8,LED,LED0805-R-RD,126.0,-93.0,90.0,top
+R1,R_US,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,178.5,-93.0,90.0,top
+R2,R_US,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,171.5,-93.0,90.0,top
+R3,R_US,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,164.5,-93.0,90.0,top
+R4,R_US,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,157.5,-93.0,90.0,top
+R5,R_US,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,150.5,-93.0,90.0,top
+R6,R_US,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,143.5,-93.0,90.0,top
+R7,R_US,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,136.5,-93.0,90.0,top
+R8,R_US,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,129.5,-93.0,90.0,top
+R9,R_US,R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,191.92,-90.29,90.0,top
+SW2,SW_MEC_5E,SW-SMD_4P-L5.1-W5.1-P3.70-LS6.5-TL-2,197.72,-89.89,0.0,top
+U1,CH32V003FxUx,QFN-20-1EP_3x3mm_P0.4mm_EP1.65x1.65mm,187.0,-93.0,-45.0,top
+U2,XC6206PxxxMR,SOT-23-3,198.18,-97.2975,0.0,top
