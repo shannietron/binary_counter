@@ -1079,7 +1079,7 @@
 		(path "/7f83e218-b43f-4476-874b-617949c5009b")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start -1.2 -1.2)
 			(end 1.2 -1.2)
@@ -1250,7 +1250,7 @@
 		(path "/507be221-bae0-4466-9f83-42be89224800")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.2)
@@ -2626,7 +2626,7 @@
 		(path "/c312814f-3202-4f95-aa3b-7d7e8c63a508")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.2)
@@ -2739,7 +2739,7 @@
 		(path "/77469f37-e31e-4994-b129-269659270fb5")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.2)
@@ -3367,7 +3367,7 @@
 		(path "/6406689a-06be-47fa-a283-ccb2f9d2fb08")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr through_hole)
+		(attr through_hole exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 6.45 -2.65)
 			(end 6.45 3.4)
@@ -4473,7 +4473,7 @@
 		(path "/f36dd38f-2c25-4f65-b7af-fc186bcd2efa")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.2)
@@ -4586,7 +4586,7 @@
 		(path "/fac44a85-4ef9-40ae-960f-2ef7b9028f10")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.2)
@@ -5599,7 +5599,7 @@
 		(path "/c3b327ea-952a-454a-b33b-4450423f4b4a")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.2)
@@ -5923,7 +5923,7 @@
 		(path "/e56325bb-9c08-4e91-9074-88b5bc48ca89")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.2)
@@ -6910,7 +6910,7 @@
 		(path "/5a16393f-2a18-4675-94ce-98c3ec4e6248")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.2)
@@ -7587,7 +7587,7 @@
 		(path "/2f433a63-a151-4d87-9fb8-f8987f346ee9")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.2)
@@ -8600,7 +8600,7 @@
 		(path "/32e862f9-0317-41a9-921b-e39742ec0e8a")
 		(sheetname "Root")
 		(sheetfile "Binary_Counter.kicad_sch")
-		(attr exclude_from_pos_files)
+		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 0 1.2)
@@ -8991,6 +8991,101 @@
 		)
 		(layer "Edge.Cuts")
 		(uuid "d4d9bc01-82e4-4dc1-82eb-7f8678e55f49")
+	)
+	(gr_line
+		(start 118 80.5)
+		(end 118 105.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.6")
+		(uuid "06690d68-a81e-43dc-9f0e-0caf8fc859e2")
+	)
+	(gr_arc
+		(start 218 75.5)
+		(mid 221.535534 76.964466)
+		(end 223 80.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.6")
+		(uuid "10e0ce94-f416-4404-8789-469392900332")
+	)
+	(gr_arc
+		(start 118 80.5)
+		(mid 119.464466 76.964466)
+		(end 123 75.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.6")
+		(uuid "4fd475cd-cdf0-4c5b-9cce-e1e6031698b2")
+	)
+	(gr_line
+		(start 123 75.5)
+		(end 218 75.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.6")
+		(uuid "5f032d68-ebbf-46ac-a88d-2018b4b5d54d")
+	)
+	(gr_line
+		(start 223 80.5)
+		(end 223 105.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.6")
+		(uuid "68d39067-6c7d-4b17-ae03-a2b5e06e4376")
+	)
+	(gr_arc
+		(start 123 110.5)
+		(mid 119.464466 109.035534)
+		(end 118 105.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.6")
+		(uuid "b8acb1b2-24ae-4ac8-81f9-5e64e5b02635")
+	)
+	(gr_line
+		(start 123 110.5)
+		(end 218 110.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.6")
+		(uuid "cca05cba-aced-44d1-8fb6-87d91529cbc0")
+	)
+	(gr_arc
+		(start 223 105.5)
+		(mid 221.535534 109.035534)
+		(end 218 110.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.6")
+		(uuid "fc774ab8-e4e7-4fc3-99ba-ee6601902106")
+	)
+	(gr_circle
+		(center 200.5 93)
+		(end 210.5 103)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.7")
+		(uuid "ffc9f849-2cfd-43c8-a92a-9464087f41c2")
 	)
 	(gr_text "shan.mp/binary_counter"
 		(at 191.1 95.3 0)
