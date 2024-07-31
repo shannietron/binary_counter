@@ -19,9 +19,15 @@ wall_thickness = 1.2;
 // Space between the top of the PCB and the top of the case
 headroom = 0;
 
+/* [M3 screws] */
+// Outer diameter for the insert
+insert_M3_diameter = 2.5;
+// Depth of the insert
+insert_M3_depth = 4.5;
+
 /* [M2.5 screws] */
 // Outer diameter for the insert
-insert_M2_5_diameter = 3.27;
+insert_M2_5_diameter = 1.7; //actually M2 screws fit this hole
 // Depth of the insert
 insert_M2_5_depth = 3.75;
 
@@ -100,6 +106,34 @@ module connector(min_x, min_y, max_x, max_y, height) {
         cube([size_x, size_y, height], center=true);
 }
 
+module CaseCorner(size, hole_diameter, head_diameter, head_height) {
+    translate([0, 0, -floor_height])
+    difference() {
+        union() {
+            cylinder(inner_height, size/2, size/2);
+            translate([-size, 0, inner_height/2])
+                cube([size*2, size, inner_height], center=true);
+        }
+
+        cylinder(inner_height+1, hole_diameter/2, hole_diameter/2);
+
+        translate([0, 0, floor_height])
+            CaseCorner_substract(size, hole_diameter, head_diameter, head_height);
+
+        translate([0, 0, inner_height+0.01])
+            children();
+
+    }
+}
+
+module CaseCorner_substract(size, hole_diameter, head_diameter, head_height) {
+    translate([0, 0, 0.11]) {
+        cylinder(inner_height+floor_height, hole_diameter/2, hole_diameter/2);
+        translate([0, 0, inner_height+floor_height-head_height])
+            cylinder(head_height, hole_diameter/2, head_diameter/2);
+    }
+}
+
 module pcb() {
     thickness = 1.6;
 
@@ -120,7 +154,14 @@ module pcb() {
 }
 
 module case_outline() {
-    polygon(points = [[118,80.5], [118,105.5], [118.06155,106.28215], [118.2447,107.0451], [118.54495,107.76995], [118.9549,108.43895], [119.46445,109.03555], [120.06105,109.5451], [120.73005,109.95505], [121.4549,110.2553], [122.21785,110.43845], [123.0,110.5], [218,110.5], [218.78215,110.43845], [219.5451,110.2553], [220.26995,109.95505], [220.93895,109.5451], [221.53555,109.03555], [222.0451,108.43895], [222.45505,107.76995], [222.7553,107.0451], [222.93845,106.28215], [223.0,105.5], [223,80.5], [222.93845,79.71785], [222.7553,78.9549], [222.45505,78.23005], [222.0451,77.56105], [221.53555,76.96445], [220.93895,76.4549], [220.26995,76.04495], [219.5451,75.7447], [218.78215,75.56155], [218.0,75.5], [123,75.5], [122.21785,75.56155], [121.4549,75.7447], [120.73005,76.04495], [120.06105,76.4549], [119.46445,76.96445], [118.9549,77.56105], [118.54495,78.23005], [118.2447,78.9549], [118.06155,79.71785], [118.0,80.5]]);
+    polygon(points = [[118,80.5], [118,105.5], [118.06155,106.28215], [118.2447,107.0451], [118.54495,107.76995], [118.9549,108.43895], [119.46445,109.03555], [120.06105,109.5451], [120.73005,109.95505], [121.4549,110.2553], [122.21785,110.43845], [123.0,110.5], [248,110.5], [248.78215,110.43845], [249.5451,110.2553], [250.26995,109.95505], [250.93895,109.5451], [251.53555,109.03555], [252.0451,108.43895], [252.45505,107.76995], [252.7553,107.0451], [252.93845,106.28215], [253.0,105.5], [253,80.5], [252.93845,79.71785], [252.7553,78.9549], [252.45505,78.23005], [252.0451,77.56105], [251.53555,76.96445], [250.93895,76.4549], [250.26995,76.04495], [249.5451,75.7447], [248.78215,75.56155], [248.0,75.5], [123,75.5], [122.21785,75.56155], [121.4549,75.7447], [120.73005,76.04495], [120.06105,76.4549], [119.46445,76.96445], [118.9549,77.56105], [118.54495,78.23005], [118.2447,78.9549], [118.06155,79.71785], [118.0,80.5]]);
+}
+
+module Insert_M3() {
+    translate([0, 0, -insert_M3_depth])
+        cylinder(insert_M3_depth, insert_M3_diameter/2, insert_M3_diameter/2);
+    translate([0, 0, -0.3])
+        cylinder(0.3, insert_M3_diameter/2, insert_M3_diameter/2+0.3);
 }
 
 module Insert_M2_5() {
@@ -132,7 +173,7 @@ module Insert_M2_5() {
 
 rotate([render == "lid" ? 180 : 0, 0, 0])
 scale([1, -1, 1])
-translate([-170.5, -93.0, 0]) {
+translate([-185.5, -93.0, 0]) {
     pcb_top = floor_height + standoff_height + pcb_thickness;
 
     difference() {
@@ -140,8 +181,44 @@ translate([-170.5, -93.0, 0]) {
             case_outline();
         }
 
-    translate([200.5, 93, inner_height])
-        cylinder(floor_height+2, 14.142135623730951, 14.142135623730951);
+    translate([140.0, 93.0, 0])
+        #cube([1.5, 2.0, floor_height + 2], center=true);
+    translate([154.0, 93.0, 0])
+        #cube([1.5, 2.0, floor_height + 2], center=true);
+    translate([175.0, 93.0, 0])
+        #cube([1.5, 2.0, floor_height + 2], center=true);
+    translate([133.0, 93.0, 0])
+        #cube([1.5, 2.0, floor_height + 2], center=true);
+    translate([147.0, 93.0, 0])
+        #cube([1.5, 2.0, floor_height + 2], center=true);
+    translate([126.0, 93.0, 0])
+        #cube([1.5, 2.0, floor_height + 2], center=true);
+    translate([168.0, 93.0, 0])
+        #cube([1.5, 2.0, floor_height + 2], center=true);
+    translate([161.0, 93.0, 0])
+        #cube([1.5, 2.0, floor_height + 2], center=true);
+    translate([236.0, 93.0, 0])
+        #cylinder(5,15,15);
+    // Substract: Corner screw mount for a screw-mount lid with an M3 sized screw
+    translate([248, 105.5, floor_height])
+    rotate([0, 0, -135])
+        CaseCorner_substract(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65);
+
+    // Substract: Corner screw mount for a screw-mount lid with an M3 sized screw
+    translate([123, 105.5, floor_height])
+    rotate([0, 0, -45])
+        CaseCorner_substract(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65);
+
+    // Substract: Corner screw mount for a screw-mount lid with an M3 sized screw
+    translate([248, 80.5, floor_height])
+    rotate([0, 0, 135])
+        CaseCorner_substract(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65);
+
+    // Substract: Corner screw mount for a screw-mount lid with an M3 sized screw
+    translate([123, 80.5, floor_height])
+    rotate([0, 0, 45])
+        CaseCorner_substract(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65);
+
     }
 
     if (show_pcb && $preview) {
@@ -152,19 +229,52 @@ translate([-170.5, -93.0, 0]) {
     if (render == "all" || render == "case") {
         // H2 [('M2.5', 2.5)]
         translate([216, 87.5, floor_height])
-        mount(2.2, 4.9, standoff_height)
+        mount(0, 4.9, standoff_height)
             Insert_M2_5();
         // H4 [('M2.5', 2.5)]
         translate([125.5, 98.5, floor_height])
-        mount(2.2, 4.9, standoff_height)
+        mount(0, 4.9, standoff_height)
             Insert_M2_5();
         // H1 [('M2.5', 2.5)]
         translate([216, 98.5, floor_height])
-        mount(2.2, 4.9, standoff_height)
+        mount(0, 4.9, standoff_height)
             Insert_M2_5();
         // H3 [('M2.5', 2.5)]
         translate([125.5, 87.5, floor_height])
-        mount(2.2, 4.9, standoff_height)
+        mount(0, 4.9, standoff_height)
             Insert_M2_5();
+        intersection() {
+            translate([0, 0, floor_height])
+            linear_extrude(inner_height)
+                case_outline();
+
+            union() {
+
+            // Corner screw mount for a screw-mount lid with an M3 sized screw
+            translate([248, 105.5, floor_height])
+            rotate([0, 0, -135])
+                CaseCorner(size=5.6, hole_diameter=2.5, head_diameter=5.6, head_height=1.65)
+                    Insert_M3();
+
+            // Corner screw mount for a screw-mount lid with an M3 sized screw
+            translate([123, 105.5, floor_height])
+            rotate([0, 0, -45])
+                CaseCorner(size=5.6, hole_diameter=2.5, head_diameter=5.6, head_height=1.65)
+                    Insert_M3();
+
+            // Corner screw mount for a screw-mount lid with an M3 sized screw
+            translate([248, 80.5, floor_height])
+            rotate([0, 0, 135])
+                CaseCorner(size=5.6, hole_diameter=2.5, head_diameter=5.6, head_height=1.65)
+                    Insert_M3();
+
+            // Corner screw mount for a screw-mount lid with an M3 sized screw
+            translate([123, 80.5, floor_height])
+            rotate([0, 0, 45])
+                CaseCorner(size=5.6, hole_diameter=2.5, head_diameter=5.6, head_height=1.65)
+                    Insert_M3();
+
+            }
+        }
     }
 }
