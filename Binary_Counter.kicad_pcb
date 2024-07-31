@@ -320,6 +320,190 @@
 			)
 		)
 	)
+	(footprint "TurboCase:CaseCorner_M3"
+		(layer "F.Cu")
+		(uuid "04983184-dab6-44fa-aaa7-10098377bed0")
+		(at 248 105.5 135)
+		(descr "Corner screw mount for a screw-mount lid with an M3 sized screw")
+		(property "Reference" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "f59b7fd1-b66b-4bbb-bd73-f91e08cd01e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "8bc7f39c-48f7-4521-9a29-a4de0784da3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TurboCase:CaseCorner_M3"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cd28b2c-9cd4-4899-84e9-ca543ceb51fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9af9b81-8cdd-4eae-abcd-9800b47c6593")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "579517f5-3a21-43aa-918e-a14e3fea4364")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TurboCaseModule" "eJylkktuwyAQhvc+BUu7tRM726qrHKOKIgLjGgmDxGPRVrl7hsSkgNwqVUeWDGge3/wzs+ZeAtlTC3ttFJjaik9oyaQlHLmgMzgweAXKy+sE4n1yDfmqCJozVFlJHdRvfUvw60aptVm8Ds3ViYtxBAOKQR3jgnkltMpegrEPKRRHIqGQa0nUksC33cV/85LFJBTdrREkSeO3uwUlq+RPGBD8n5bEedChJQwUdv7qjIek5Lm6H1dpn4dCyQBePGC6agX/JuKKhtG+R3a0/mQxlLk/D++32lkj/aYfCgA2CclxmHXMcq5Qj7lcqH/Q/bRa/WZAmGRd1sVPxXtoDo9JkabtEtxSnsiUuKxRpO3fKYKUF3ygHxc="
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "935867a7-8376-47e3-950f-6ff2daea677c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseAdd" "CaseCorner(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65)"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3ff42026-43a8-4527-a173-13c356de21e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseSub" "CaseCorner_substract(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65)"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "dc323b63-ef0e-4d6f-9423-c02493ed99b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseConstrain" "yes"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a2827bfe-14e6-4797-8d3e-36ac09598ce3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseScrewSize" "3"
+			(at 0 0 135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6948d0ee-6afa-487e-b61f-5e446e1b93ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(zone_connect 0)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+		(fp_line
+			(start -5.6 -2.8)
+			(end 0 -2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "bcb29ddf-9dcb-43c1-aee6-c12d4382ffe6")
+		)
+		(fp_line
+			(start -5.6 2.8)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "efba2fe3-b3e9-4e79-8d0c-8232f7180682")
+		)
+		(fp_arc
+			(start 0 -2.8)
+			(mid 2.8 0)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "d2222e4b-3577-4339-833c-562f1a83d683")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0 1.5)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(fill none)
+			(layer "User.6")
+			(uuid "5f3a30de-17a2-4152-a522-afcc44f29fef")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type dot)
+			)
+			(fill none)
+			(layer "User.6")
+			(uuid "3f7d11e7-4ada-4139-a834-4099d289f147")
+		)
+	)
 	(footprint "LED:LED0805-R-RD"
 		(layer "F.Cu")
 		(uuid "0eb651ae-2e7b-4de8-a978-a8cc77c3b5fa")
@@ -2346,6 +2530,190 @@
 			)
 		)
 	)
+	(footprint "TurboCase:CaseCorner_M3"
+		(layer "F.Cu")
+		(uuid "4bb223b2-adb4-412c-bb7e-e79ec3602f31")
+		(at 123 105.5 45)
+		(descr "Corner screw mount for a screw-mount lid with an M3 sized screw")
+		(property "Reference" ""
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "f59b7fd1-b66b-4bbb-bd73-f91e08cd01e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "8bc7f39c-48f7-4521-9a29-a4de0784da3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TurboCase:CaseCorner_M3"
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cd28b2c-9cd4-4899-84e9-ca543ceb51fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9af9b81-8cdd-4eae-abcd-9800b47c6593")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "579517f5-3a21-43aa-918e-a14e3fea4364")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TurboCaseModule" "eJylkktuwyAQhvc+BUu7tRM726qrHKOKIgLjGgmDxGPRVrl7hsSkgNwqVUeWDGge3/wzs+ZeAtlTC3ttFJjaik9oyaQlHLmgMzgweAXKy+sE4n1yDfmqCJozVFlJHdRvfUvw60aptVm8Ds3ViYtxBAOKQR3jgnkltMpegrEPKRRHIqGQa0nUksC33cV/85LFJBTdrREkSeO3uwUlq+RPGBD8n5bEedChJQwUdv7qjIek5Lm6H1dpn4dCyQBePGC6agX/JuKKhtG+R3a0/mQxlLk/D++32lkj/aYfCgA2CclxmHXMcq5Qj7lcqH/Q/bRa/WZAmGRd1sVPxXtoDo9JkabtEtxSnsiUuKxRpO3fKYKUF3ygHxc="
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "935867a7-8376-47e3-950f-6ff2daea677c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseAdd" "CaseCorner(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65)"
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3ff42026-43a8-4527-a173-13c356de21e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseSub" "CaseCorner_substract(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65)"
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "dc323b63-ef0e-4d6f-9423-c02493ed99b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseConstrain" "yes"
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a2827bfe-14e6-4797-8d3e-36ac09598ce3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseScrewSize" "3"
+			(at 0 0 45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6948d0ee-6afa-487e-b61f-5e446e1b93ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(zone_connect 0)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+		(fp_line
+			(start -5.6 -2.8)
+			(end 0 -2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "bcb29ddf-9dcb-43c1-aee6-c12d4382ffe6")
+		)
+		(fp_line
+			(start -5.6 2.8)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "efba2fe3-b3e9-4e79-8d0c-8232f7180682")
+		)
+		(fp_arc
+			(start 0 -2.8)
+			(mid 2.8 0)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "d2222e4b-3577-4339-833c-562f1a83d683")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0 1.5)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(fill none)
+			(layer "User.6")
+			(uuid "5f3a30de-17a2-4152-a522-afcc44f29fef")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type dot)
+			)
+			(fill none)
+			(layer "User.6")
+			(uuid "3f7d11e7-4ada-4139-a834-4099d289f147")
+		)
+	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(placed yes)
 		(layer "F.Cu")
@@ -2555,6 +2923,190 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(footprint "TurboCase:CaseCorner_M3"
+		(layer "F.Cu")
+		(uuid "55039627-fb60-4ac4-878e-7cc5cf7f60f0")
+		(at 248 80.5 -135)
+		(descr "Corner screw mount for a screw-mount lid with an M3 sized screw")
+		(property "Reference" ""
+			(at 0 0 -135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "f59b7fd1-b66b-4bbb-bd73-f91e08cd01e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 -135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "8bc7f39c-48f7-4521-9a29-a4de0784da3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TurboCase:CaseCorner_M3"
+			(at 0 0 -135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cd28b2c-9cd4-4899-84e9-ca543ceb51fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 -135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9af9b81-8cdd-4eae-abcd-9800b47c6593")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 -135)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "579517f5-3a21-43aa-918e-a14e3fea4364")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TurboCaseModule" "eJylkktuwyAQhvc+BUu7tRM726qrHKOKIgLjGgmDxGPRVrl7hsSkgNwqVUeWDGge3/wzs+ZeAtlTC3ttFJjaik9oyaQlHLmgMzgweAXKy+sE4n1yDfmqCJozVFlJHdRvfUvw60aptVm8Ds3ViYtxBAOKQR3jgnkltMpegrEPKRRHIqGQa0nUksC33cV/85LFJBTdrREkSeO3uwUlq+RPGBD8n5bEedChJQwUdv7qjIek5Lm6H1dpn4dCyQBePGC6agX/JuKKhtG+R3a0/mQxlLk/D++32lkj/aYfCgA2CclxmHXMcq5Qj7lcqH/Q/bRa/WZAmGRd1sVPxXtoDo9JkabtEtxSnsiUuKxRpO3fKYKUF3ygHxc="
+			(at 0 0 -135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "935867a7-8376-47e3-950f-6ff2daea677c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseAdd" "CaseCorner(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65)"
+			(at 0 0 -135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3ff42026-43a8-4527-a173-13c356de21e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseSub" "CaseCorner_substract(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65)"
+			(at 0 0 -135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "dc323b63-ef0e-4d6f-9423-c02493ed99b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseConstrain" "yes"
+			(at 0 0 -135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a2827bfe-14e6-4797-8d3e-36ac09598ce3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseScrewSize" "3"
+			(at 0 0 -135)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6948d0ee-6afa-487e-b61f-5e446e1b93ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(zone_connect 0)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+		(fp_line
+			(start -5.6 2.8)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "efba2fe3-b3e9-4e79-8d0c-8232f7180682")
+		)
+		(fp_line
+			(start -5.6 -2.8)
+			(end 0 -2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "bcb29ddf-9dcb-43c1-aee6-c12d4382ffe6")
+		)
+		(fp_arc
+			(start 0 -2.8)
+			(mid 2.8 0)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "d2222e4b-3577-4339-833c-562f1a83d683")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type dot)
+			)
+			(fill none)
+			(layer "User.6")
+			(uuid "3f7d11e7-4ada-4139-a834-4099d289f147")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0 1.5)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(fill none)
+			(layer "User.6")
+			(uuid "5f3a30de-17a2-4152-a522-afcc44f29fef")
 		)
 	)
 	(footprint "TestPoint:TestPoint_Pad_D2.0mm"
@@ -6954,6 +7506,190 @@
 			(uuid "d21d527e-ca50-42d9-ac83-91f31abfe64b")
 		)
 	)
+	(footprint "TurboCase:CaseCorner_M3"
+		(layer "F.Cu")
+		(uuid "d008d844-bd9a-4b07-aa5c-fda39f360d6d")
+		(at 123 80.5 -45)
+		(descr "Corner screw mount for a screw-mount lid with an M3 sized screw")
+		(property "Reference" ""
+			(at 0 0 -45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "f59b7fd1-b66b-4bbb-bd73-f91e08cd01e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 -45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "8bc7f39c-48f7-4521-9a29-a4de0784da3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TurboCase:CaseCorner_M3"
+			(at 0 0 -45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cd28b2c-9cd4-4899-84e9-ca543ceb51fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 -45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9af9b81-8cdd-4eae-abcd-9800b47c6593")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 -45)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "579517f5-3a21-43aa-918e-a14e3fea4364")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TurboCaseModule" "eJylkktuwyAQhvc+BUu7tRM726qrHKOKIgLjGgmDxGPRVrl7hsSkgNwqVUeWDGge3/wzs+ZeAtlTC3ttFJjaik9oyaQlHLmgMzgweAXKy+sE4n1yDfmqCJozVFlJHdRvfUvw60aptVm8Ds3ViYtxBAOKQR3jgnkltMpegrEPKRRHIqGQa0nUksC33cV/85LFJBTdrREkSeO3uwUlq+RPGBD8n5bEedChJQwUdv7qjIek5Lm6H1dpn4dCyQBePGC6agX/JuKKhtG+R3a0/mQxlLk/D++32lkj/aYfCgA2CclxmHXMcq5Qj7lcqH/Q/bRa/WZAmGRd1sVPxXtoDo9JkabtEtxSnsiUuKxRpO3fKYKUF3ygHxc="
+			(at 0 0 -45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "935867a7-8376-47e3-950f-6ff2daea677c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseAdd" "CaseCorner(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65)"
+			(at 0 0 -45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3ff42026-43a8-4527-a173-13c356de21e7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseSub" "CaseCorner_substract(size=5.6, hole_diameter=3, head_diameter=5.6, head_height=1.65)"
+			(at 0 0 -45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "dc323b63-ef0e-4d6f-9423-c02493ed99b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseConstrain" "yes"
+			(at 0 0 -45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a2827bfe-14e6-4797-8d3e-36ac09598ce3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "TurboCaseScrewSize" "3"
+			(at 0 0 -45)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6948d0ee-6afa-487e-b61f-5e446e1b93ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(zone_connect 0)
+		(attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+		(fp_line
+			(start -5.6 2.8)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "efba2fe3-b3e9-4e79-8d0c-8232f7180682")
+		)
+		(fp_line
+			(start -5.6 -2.8)
+			(end 0 -2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "bcb29ddf-9dcb-43c1-aee6-c12d4382ffe6")
+		)
+		(fp_arc
+			(start 0 -2.8)
+			(mid 2.8 0)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(layer "User.6")
+			(uuid "d2222e4b-3577-4339-833c-562f1a83d683")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0 2.8)
+			(stroke
+				(width 0.2)
+				(type dot)
+			)
+			(fill none)
+			(layer "User.6")
+			(uuid "3f7d11e7-4ada-4139-a834-4099d289f147")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0 1.5)
+			(stroke
+				(width 0.2)
+				(type default)
+			)
+			(fill none)
+			(layer "User.6")
+			(uuid "5f3a30de-17a2-4152-a522-afcc44f29fef")
+		)
+	)
 	(footprint "MountingHole:MountingHole_2.2mm_M2"
 		(layer "F.Cu")
 		(uuid "d29f295b-fa1d-49b0-bfa4-e1522bfc5324")
@@ -9003,15 +9739,48 @@
 		(uuid "06690d68-a81e-43dc-9f0e-0caf8fc859e2")
 	)
 	(gr_arc
-		(start 218 75.5)
-		(mid 221.535534 76.964466)
-		(end 223 80.5)
+		(start 248 75.5)
+		(mid 251.535534 76.964466)
+		(end 253 80.5)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "User.6")
 		(uuid "10e0ce94-f416-4404-8789-469392900332")
+	)
+	(gr_rect
+		(start 139.5 92.5)
+		(end 140.5 93.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.6")
+		(uuid "32cc14d8-3b4c-4910-b0ab-1c4df38dd23c")
+	)
+	(gr_rect
+		(start 153.5 92.5)
+		(end 154.5 93.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.6")
+		(uuid "36a74550-7140-4573-8d70-63f2ed8a6e05")
+	)
+	(gr_rect
+		(start 174.5 92.5)
+		(end 175.5 93.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.6")
+		(uuid "410c2199-37fe-4c0a-b3d0-1f6064519708")
 	)
 	(gr_arc
 		(start 118 80.5)
@@ -9024,9 +9793,20 @@
 		(layer "User.6")
 		(uuid "4fd475cd-cdf0-4c5b-9cce-e1e6031698b2")
 	)
+	(gr_rect
+		(start 132.5 92.5)
+		(end 133.5 93.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.6")
+		(uuid "5337d53c-8888-4eb1-a43b-0b2f419b4d1e")
+	)
 	(gr_line
 		(start 123 75.5)
-		(end 218 75.5)
+		(end 248 75.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -9035,14 +9815,47 @@
 		(uuid "5f032d68-ebbf-46ac-a88d-2018b4b5d54d")
 	)
 	(gr_line
-		(start 223 80.5)
-		(end 223 105.5)
+		(start 253 80.5)
+		(end 253 105.5)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "User.6")
 		(uuid "68d39067-6c7d-4b17-ae03-a2b5e06e4376")
+	)
+	(gr_rect
+		(start 146.5 92.5)
+		(end 147.5 93.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.6")
+		(uuid "69fc08a6-b55b-44ae-a622-e63081ae2d7f")
+	)
+	(gr_rect
+		(start 125.5 92.5)
+		(end 126.5 93.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.6")
+		(uuid "72613443-b12d-44a0-988b-4d7cc6dc7bb1")
+	)
+	(gr_rect
+		(start 167.5 92.5)
+		(end 168.5 93.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.6")
+		(uuid "9ce82219-e164-4df2-9346-dfdabe134ec2")
 	)
 	(gr_arc
 		(start 123 110.5)
@@ -9055,9 +9868,20 @@
 		(layer "User.6")
 		(uuid "b8acb1b2-24ae-4ac8-81f9-5e64e5b02635")
 	)
+	(gr_rect
+		(start 160.5 92.5)
+		(end 161.5 93.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.6")
+		(uuid "c7fb65ed-66de-488a-a20d-9b01cb4feb06")
+	)
 	(gr_line
 		(start 123 110.5)
-		(end 218 110.5)
+		(end 248 110.5)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -9065,27 +9889,27 @@
 		(layer "User.6")
 		(uuid "cca05cba-aced-44d1-8fb6-87d91529cbc0")
 	)
+	(gr_rect
+		(start 232.5 92.5)
+		(end 233.5 93.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.6")
+		(uuid "f614d809-dcfe-4c5d-8ea0-2cf904e97669")
+	)
 	(gr_arc
-		(start 223 105.5)
-		(mid 221.535534 109.035534)
-		(end 218 110.5)
+		(start 253 105.5)
+		(mid 251.535534 109.035534)
+		(end 248 110.5)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "User.6")
 		(uuid "fc774ab8-e4e7-4fc3-99ba-ee6601902106")
-	)
-	(gr_circle
-		(center 200.5 93)
-		(end 210.5 103)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(fill none)
-		(layer "User.7")
-		(uuid "ffc9f849-2cfd-43c8-a92a-9464087f41c2")
 	)
 	(gr_text "shan.mp/binary_counter"
 		(at 191.1 95.3 0)
