@@ -9,7 +9,7 @@ render = "case"; // [all, case, lid]
 
 /* [Dimensions] */
 // Height of the PCB mounting stand-offs between the bottom of the case and the PCB
-standoff_height = 5;
+standoff_height = 8;
 // PCB thickness
 pcb_thickness = 1.6;
 // Bottom layer thickness
@@ -21,15 +21,15 @@ headroom = 0;
 
 /* [M3 screws] */
 // Outer diameter for the insert
-insert_M3_diameter = 2.5;
+insert_M3_diameter = 3;
 // Depth of the insert
 insert_M3_depth = 4.5;
 
 /* [M2.5 screws] */
 // Outer diameter for the insert
-insert_M2_5_diameter = 1.7; //actually M2 screws fit this hole
+insert_M2_5_diameter = 2.2; //actually M2 screws fit this hole
 // Depth of the insert
-insert_M2_5_depth = 3.75;
+insert_M2_5_depth = standoff_height;
 
 /* [Hidden] */
 $fa=$preview ? 10 : 4;
@@ -175,28 +175,46 @@ rotate([render == "lid" ? 180 : 0, 0, 0])
 scale([1, -1, 1])
 translate([-185.5, -93.0, 0]) {
     pcb_top = floor_height + standoff_height + pcb_thickness;
+    
+        
+    translate([143.5, 93.0, (standoff_height+floor_height)/2-0.5])
+        #cube([1.5, 35, standoff_height], center=true);
+    translate([157.5, 93.0, (standoff_height+floor_height)/2-0.5])
+        cube([1.5, 35, standoff_height], center=true);
+    translate([178.0, 93.0, (standoff_height+floor_height)/2-0.5])
+        cube([1.5, 35, standoff_height], center=true);
+    translate([136.0, 93.0, (standoff_height+floor_height)/2-0.5])
+        cube([1.5, 35, standoff_height], center=true);
+    translate([150.0, 93.0, (standoff_height+floor_height)/2-0.5])
+        cube([1.5, 35, standoff_height], center=true);
+    translate([129.0, 93.0, (standoff_height+floor_height)/2-0.5])
+        cube([1.5, 35, standoff_height], center=true);
+    translate([171.0, 93.0, (standoff_height+floor_height)/2-0.5])
+        cube([1.5, 35, standoff_height], center=true);
+    translate([164.0, 93.0, (standoff_height+floor_height)/2-0.5])
+        cube([1.5, 35, standoff_height], center=true);
 
     difference() {
         box(wall_thickness, floor_height, inner_height) {
             case_outline();
         }
 
-    translate([140.0, 93.0, 0])
-        #cube([1.5, 2.0, floor_height + 2], center=true);
-    translate([154.0, 93.0, 0])
-        #cube([1.5, 2.0, floor_height + 2], center=true);
-    translate([175.0, 93.0, 0])
-        #cube([1.5, 2.0, floor_height + 2], center=true);
-    translate([133.0, 93.0, 0])
-        #cube([1.5, 2.0, floor_height + 2], center=true);
-    translate([147.0, 93.0, 0])
-        #cube([1.5, 2.0, floor_height + 2], center=true);
-    translate([126.0, 93.0, 0])
-        #cube([1.5, 2.0, floor_height + 2], center=true);
-    translate([168.0, 93.0, 0])
-        #cube([1.5, 2.0, floor_height + 2], center=true);
-    translate([161.0, 93.0, 0])
-        #cube([1.5, 2.0, floor_height + 2], center=true);
+    translate([140.0, 93.0, floor_height])
+        #cube([4, 5, 2], center=true);
+    translate([154.0, 93.0, floor_height])
+        cube([4, 5, 2], center=true);
+    translate([175.0, 93.0, floor_height])
+        cube([4, 5, 2], center=true);
+    translate([133.0, 93.0, floor_height])
+        cube([4, 5, 2], center=true);
+    translate([147.0, 93.0, floor_height])
+        cube([4, 5, 2], center=true);
+    translate([126.0, 93.0, floor_height])
+        cube([4, 5, 2], center=true);
+    translate([168.0, 93.0, floor_height])
+        cube([4, 5, 2], center=true);
+    translate([161.0, 93.0, floor_height])
+        cube([4, 5, 2], center=true);
     translate([236.0, 93.0, 0])
         #cylinder(5,15,15);
     // Substract: Corner screw mount for a screw-mount lid with an M3 sized screw
